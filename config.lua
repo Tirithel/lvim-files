@@ -131,6 +131,11 @@ lvim.plugins = {
       require('crates').setup()
     end,
   },
+  -- scala metals
+  {
+    'scalameta/nvim-metals',
+    requires = { "nvim-lua/plenary.nvim" }
+  },
   -- {
   --   "echasnovski/mini.map",
   --   branch = "stable",
