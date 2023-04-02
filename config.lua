@@ -136,6 +136,8 @@ lvim.plugins = {
     'scalameta/nvim-metals',
     requires = { "nvim-lua/plenary.nvim" }
   },
+  -- formatter
+  { 'sbdchd/neoformat' },
   -- {
   --   "echasnovski/mini.map",
   --   branch = "stable",
@@ -230,6 +232,7 @@ lvim.builtin.gitsigns.opts.signs = {
 	delete       = { hl = 'GitSignsDelete', text = 'D', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn' },
 	topdelete    = { hl = 'GitSignsDelete', text = 'D', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn' },
 	changedelete = { hl = 'GitSignsChange', text = 'D', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn' },
+  untracked    = { hl = 'GitSignsAdd',    text = 'N',  numhl='GitSignsAddNr',    linehl='GitSignsAddLn' },
 }
 
 -- debug

@@ -60,3 +60,10 @@ api.nvim_create_autocmd("FileType", {
   end,
   group = nvim_metals_group,
 })
+
+
+-- autocmd BufWritePre *.{scala,sbt} Neoformat
+vim.api.nvim_create_autocmd( { "BufWritePre" }, {
+  pattern = {"*.scala", "*.sbt"},
+  command = "Neoformat"
+})
