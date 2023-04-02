@@ -123,6 +123,7 @@ lvim.plugins = {
   { 'simrat39/rust-tools.nvim' },
   { 'petertriho/nvim-scrollbar' },
   { 'nvim-treesitter/playground' },
+  { 'nvim-treesitter/nvim-treesitter-context' },
   {
     'saecki/crates.nvim',
     tag = 'v0.3.0',
@@ -138,6 +139,10 @@ lvim.plugins = {
   },
   -- formatter
   { 'sbdchd/neoformat' },
+  {
+    'mfussenegger/nvim-jdtls',
+    ft = { "java" }
+  },
   -- {
   --   "echasnovski/mini.map",
   --   branch = "stable",
@@ -166,7 +171,6 @@ lvim.plugins = {
   --     })
   --   end
   -- },
-}
 -- mini
 -- lvim.autocommands = {
 --   {
@@ -195,6 +199,7 @@ lvim.plugins = {
 --     },
 --   },
 -- }
+}
 
 -- scrollbar
 require("scrollbar").setup()
@@ -232,7 +237,7 @@ lvim.builtin.gitsigns.opts.signs = {
 	delete       = { hl = 'GitSignsDelete', text = 'D', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn' },
 	topdelete    = { hl = 'GitSignsDelete', text = 'D', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn' },
 	changedelete = { hl = 'GitSignsChange', text = 'D', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn' },
-  untracked    = { hl = 'GitSignsAdd',    text = 'N',  numhl='GitSignsAddNr',    linehl='GitSignsAddLn' },
+  untracked    = { hl = 'GitSignsAdd',    text = 'N', numhl='GitSignsAddNr',    linehl='GitSignsAddLn'    },
 }
 
 -- debug
