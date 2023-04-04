@@ -143,6 +143,10 @@ lvim.plugins = {
     'mfussenegger/nvim-jdtls',
     ft = { "java" }
   },
+  {
+    'weilbith/nvim-code-action-menu',
+     cmd = 'CodeActionMenu'
+  },
   -- {
   --   "echasnovski/mini.map",
   --   branch = "stable",
@@ -255,7 +259,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<leader>bs", "<cmd>Alpha<CR>")
 
 -- settings
-vim.opt.colorcolumn = "120"
+vim.opt.colorcolumn = "140"
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
@@ -280,5 +284,3 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
-
-vim.opt.colorcolumn = "120"
